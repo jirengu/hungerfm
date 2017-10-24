@@ -324,7 +324,6 @@ $.fn.boomText = function(type){
 Footer.init()
 Fm.init()
 
-document.documentElement.webkitRequestFullScreen()
 
 
 
