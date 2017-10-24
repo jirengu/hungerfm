@@ -136,10 +136,19 @@ var App = {
     this.collections = this.loadFromLocal()
     this.bind()
 
-    EventCenter.fire('select-albumn', {
-      channelId: '0',
-      channelName: '我的最爱'
-    })
+    this.playInit()
+
+  },
+
+  playInit: function(){
+    if(this.collections.length > 0){
+      EventCenter.fire('select-albumn', {
+        channelId: '0',
+        channelName: '我的最爱'
+      })      
+    }else{
+      this.loadSong()
+    }
   },
   bind: function(){
     var _this = this
