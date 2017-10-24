@@ -124,7 +124,7 @@ var Footer = {
 
 
 
-var App = {
+var Fm = {
   init: function(){
     this.channelId = 'public_shiguang_80hou'
     this.channelName = '80后'
@@ -322,7 +322,9 @@ $.fn.boomText = function(type){
 
 
 Footer.init()
-App.init()
+Fm.init()
+
+document.documentElement.webkitRequestFullScreen()
 
 
 
